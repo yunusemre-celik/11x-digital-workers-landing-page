@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11x — Digital Workers, Human Results</title>
+  <meta name="description" content="11x builds autonomous digital workers for modern revenue, sales, and RevOps teams. Deploy Alice the SDR and Jordan the Phone Agent to scale pipeline 11x.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Design System Stylesheet & Google Fonts Didone Serif -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Top Announcement Bar -->
+  <div class="announcement-bar">
+    <a href="#platform-spotlight" class="announcement-link">
+      <span class="announcement-badge">Announcing</span>
+      <span>$70M+ Series B raised from a16z, Benchmark, and Quiet Capital</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="7" y1="17" x2="17" y2="7"></line>
+        <polyline points="7 7 17 7 17 17"></polyline>
+      </svg>
+    </a>
+  </div>
+
+  <!-- 2. Sticky Editorial Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo" aria-label="11x Home">
+        <img src="assets/favicon.png" alt="11x emblem" class="brand-icon">
+        <span>11x</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#workers" class="nav-link">
+              Products
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown-panel">
+              <a href="#workers" class="dropdown-item">
+                <span class="dropdown-title">Alice — Autonomous SDR</span>
+                <span class="dropdown-desc">Multi-channel prospecting, account research, and meeting scheduling</span>
+              </a>
+              <a href="#workers" class="dropdown-item">
+                <span class="dropdown-title">Jordan — Voice Agent</span>
+                <span class="dropdown-desc">Sub-400ms conversational phone outreach & objection handling</span>
+              </a>
+              <a href="#workers" class="dropdown-item">
+                <span class="dropdown-title">Julian — Web Researcher</span>
+                <span class="dropdown-desc">Account recon, 10-K signal tracking, and buying intent triggers</span>
+              </a>
+              <a href="#workers" class="dropdown-item">
+                <span class="dropdown-title">Arthur — RevOps & Inbound</span>
+                <span class="dropdown-desc">Instant inbound qualification, lead routing, and CRM enrichment</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#simulation" class="nav-link">
+              Platform
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown-panel">
+              <a href="#simulation" class="dropdown-item">
+                <span class="dropdown-title">Interactive Console</span>
+                <span class="dropdown-desc">Live simulation of email, voice, and signal triggers</span>
+              </a>
+              <a href="#dark-narrative" class="dropdown-item">
+                <span class="dropdown-title">Security & Compliance</span>
+                <span class="dropdown-desc">SOC2 Type II, ISO 27001, and enterprise tenant privacy</span>
+              </a>
+              <a href="#features" class="dropdown-item">
+                <span class="dropdown-title">Omni-Channel Engine</span>
+                <span class="dropdown-desc">Unified orchestration across email, phone, and social</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#features" class="nav-link">
+              Solutions
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown-panel">
+              <a href="#features" class="dropdown-item">
+                <span class="dropdown-title">Enterprise B2B</span>
+                <span class="dropdown-desc">Complex territory mapping and multi-stakeholder cadences</span>
+              </a>
+              <a href="#calculator" class="dropdown-item">
+                <span class="dropdown-title">High-Growth SaaS</span>
+                <span class="dropdown-desc">Scale pipeline without inflating SDR headcount</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a href="#calculator" class="nav-link">ROI Calculator</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#demo" class="btn-pill btn-pill-primary-light js-open-demo-modal">Get started</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. Hero Section (Full-Bleed Photographic Desert Terrain) -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-pill-badge">
+          <span class="pulse-dot"></span>
+          <span>Autopilot Revenue Architecture 2.0</span>
+        </div>
+
+        <h1 class="hero-title">
+          Digital workers,<br>
+          Human results.
+        </h1>
+
+        <p class="hero-subheadline">
+          For Sales, RevOps, and Go-to-Market Teams.
+        </p>
+
+        <div class="hero-divider"></div>
+
+        <div class="hero-cta-group">
+          <a href="#demo" class="btn-pill btn-pill-primary-dark js-open-demo-modal">Get started</a>
+          <a href="#simulation" class="btn-pill btn-pill-outline-dark">
+            <span>Explore Workers</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-backers-strip">
+          <div class="hero-backers-label">Backed by tier-1 global partners & founders</div>
+          <div class="hero-backers-list">
+            <span class="hero-backer-item">Andreessen Horowitz (a16z)</span>
+            <span class="hero-backer-item">Benchmark</span>
+            <span class="hero-backer-item">SV Angel</span>
+            <span class="hero-backer-item">Quiet Capital</span>
+            <span class="hero-backer-item">Snowflake Ventures</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Authentic Platform Spotlight (Incorporating hero-screenshot.jpg) -->
+  <section class="platform-spotlight-section" id="platform-spotlight">
+    <div class="container">
+      <div class="spotlight-header">
+        <span class="section-label">Editorial Platform Canvas</span>
+        <h2 class="section-title">The First True Autonomous Enterprise Workforce</h2>
+        <p class="section-description">
+          A unified command platform orchestrating autonomous account reconnaissance, high-touch multi-channel sequences, and natural telephone outreach.
+        </p>
+      </div>
+
+      <div class="screenshot-frame">
+        <div class="screenshot-topbar">
+          <div class="browser-dots">
+            <div class="browser-dot"></div>
+            <div class="browser-dot"></div>
+            <div class="browser-dot"></div>
+          </div>
+          <div class="browser-address">https://www.11x.ai/platform/autonomous-workforce</div>
+          <div style="font-size: 12px; color: #777;">Verified Enterprise Fleet</div>
+        </div>
+
+        <div class="screenshot-image-wrapper" id="screenshotTrigger" title="Click to view full-resolution platform overview">
+          <img src="assets/hero-screenshot.jpg" alt="11x Digital Workers Live Platform Overview" class="screenshot-image">
+          <div class="screenshot-overlay-cta">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              <line x1="11" y1="8" x2="11" y2="14"></line>
+              <line x1="8" y1="11" x2="14" y2="11"></line>
+            </svg>
+            <span>Expand Platform View</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Editorial Manifesto Spread (Bone #f6f5f5 Surface) -->
+  <section class="editorial-spread-section" id="manifesto">
+    <div class="container">
+      <div class="editorial-grid">
+        <div class="editorial-quote-block">
+          <blockquote class="editorial-quote">
+            “We do not build software tools for human reps to endlessly manage. We build digital colleagues who take complete accountability for revenue outcomes.”
+          </blockquote>
+          <div class="editorial-attribution">
+            — The 11x Architectural Manifesto
+          </div>
+        </div>
+
+        <div class="editorial-body-copy">
+          <p class="editorial-lead-paragraph">
+            Traditional sales software buried revenue teams under mountains of dashboard maintenance, manual data entry, and cookie-cutter cadences that buyers filter out.
+          </p>
+          <p class="editorial-paragraph">
+            11x introduces autonomous digital workers. Powered by multi-agent reasoning, continuous internet research, and voice synthesis indistinguishable from top enterprise sales reps, our workers research target accounts, draft custom outreach, conduct outbound discovery calls, and book pipeline directly into your calendar.
+          </p>
+          <p class="editorial-paragraph">
+            Zero ramp time. Infinite horizontal scale. 100% adherence to your brand voice and enterprise compliance guidelines.
+          </p>
+        </div>
+      </div>
+
+      <!-- Live Metric Strip -->
+      <div class="metrics-strip">
+        <div class="metric-card">
+          <div class="metric-number">11x</div>
+          <div class="metric-label">More qualified pipeline generated compared to legacy manual SDR outbound</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">4.8M+</div>
+          <div class="metric-label">Autonomous multi-channel prospect touches executed across global enterprise accounts</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">82%</div>
+          <div class="metric-label">Reduction in cost per qualified meeting booked into account executive calendars</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">&lt; 30s</div>
+          <div class="metric-label">Median inbound lead response time, eradicating pipeline decay completely</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Digital Workers Showcase (Portrait Worker Cards with 32px Radius) -->
+  <section class="workers-showcase-section" id="workers">
+    <div class="container">
+      <div class="spotlight-header">
+        <span class="section-label">The Autonomous Workforce</span>
+        <h2 class="section-title">Meet Your New Top Performers</h2>
+        <p class="section-description">
+          Specialized digital workers designed to operate as full-time team members across outbound prospecting, voice qualification, and account intelligence.
+        </p>
+      </div>
+
+      <!-- Worker Switcher Tabs -->
+      <div class="workers-nav-tabs">
+        <button class="worker-tab-btn active" data-worker="alice">Alice — Autonomous SDR</button>
+        <button class="worker-tab-btn" data-worker="jordan">Jordan — Voice Agent</button>
+        <button class="worker-tab-btn" data-worker="julian">Julian — Market Researcher</button>
+        <button class="worker-tab-btn" data-worker="arthur">Arthur — RevOps & Inbound</button>
+      </div>
+
+      <!-- Worker Profile Display -->
+      <div class="worker-profile-display">
+        <!-- Portrait Worker Card (Strictly 32px border-radius, hairline border, top-left status pill) -->
+        <div class="portrait-worker-card">
+          <div class="portrait-status-badge">
+            <span class="status-dot"></span>
+            <span id="portraitStatusText">Live Autopilot · 3,420 accounts enriched today</span>
+          </div>
+
+          <img src="assets/worker-alice.jpg" alt="Alice - Autonomous SDR" class="portrait-image" id="portraitWorkerImage">
+
+          <div class="portrait-bottom-info">
+            <h3 class="portrait-worker-name" id="portraitWorkerName">Alice</h3>
+            <p class="portrait-worker-role" id="portraitWorkerRole">Autonomous Sales Development Representative (SDR)</p>
+          </div>
+        </div>
+
+        <!-- Detail Panel -->
+        <div class="worker-details-panel">
+          <div>
+            <div class="worker-badge-pill badge-wisteria" id="detailWorkerBadge">Autonomous Outbound</div>
+            <h3 class="worker-title-lg" id="detailWorkerTitle">Alice books high-value pipeline while you sleep.</h3>
+            <p class="worker-summary" id="detailWorkerSummary">
+              Alice acts as a full-time outbound SDR. She conducts comprehensive multi-source account research, detects buying intent, writes hyper-personalized emails, engages over LinkedIn, handles objections, and schedules meetings straight into your reps’ calendars.
+            </p>
+
+            <div class="worker-capabilities-grid" id="detailCapabilitiesGrid">
+              <div class="capability-card">
+                <h4 class="capability-title">Deep Account Reconnaissance</h4>
+                <p class="capability-desc">Parses 10-K filings, quarterly earnings, job listings, and tech stacks to find authentic pain points.</p>
+              </div>
+              <div class="capability-card">
+                <h4 class="capability-title">Hyper-Personalized Multi-Channel</h4>
+                <p class="capability-desc">Executes bespoke email and LinkedIn outreach with tone matched to your top enterprise closers.</p>
+              </div>
+              <div class="capability-card">
+                <h4 class="capability-title">Autonomous Calendar Scheduling</h4>
+                <p class="capability-desc">Answers questions, overcomes gatekeepers, and routes qualified buyers directly into calendar slots.</p>
+              </div>
+              <div class="capability-card">
+                <h4 class="capability-title">Closed-Loop CRM Hygiene</h4>
+                <p class="capability-desc">Logs every single touchpoint, response, and sentiment metric back into Salesforce or HubSpot.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="worker-actions-bar">
+            <a href="#demo" class="btn-pill btn-pill-primary-light js-open-demo-modal">Deploy Alice</a>
+            <a href="#simulation" class="btn-pill btn-pill-outline-light">Simulate Workflow</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Interactive Live Worker Console / Simulation -->
+  <section class="simulation-section" id="simulation">
+    <div class="container">
+      <div class="spotlight-header">
+        <span class="section-label">Real-Time Simulation</span>
+        <h2 class="section-title">Experience Autonomous Precision</h2>
+        <p class="section-description">
+          Test drive how Alice, Jordan, and Julian execute live workflows across outbound email synthesis, telephone conversations, and buying signals.
+        </p>
+      </div>
+
+      <div class="simulation-container">
+        <!-- Navigation bar -->
+        <div class="simulation-nav">
+          <button class="sim-nav-btn active" data-sim-tab="email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>Alice: Tailored Email Synthesis</span>
+          </button>
+          <button class="sim-nav-btn" data-sim-tab="voice">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Jordan: Live Phone Telephony</span>
+          </button>
+          <button class="sim-nav-btn" data-sim-tab="radar">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+            <span>Julian: Account Signal Radar</span>
+          </button>
+        </div>
+
+        <div class="sim-body">
+          <!-- Tab 1: Email -->
+          <div class="sim-tab-content active" id="sim-email">
+            <div class="sim-email-box">
+              <div class="sim-meta-row">
+                <div class="sim-meta-item"><strong>From:</strong> <span>alice@company11x.ai (Alice, Autonomous SDR)</span></div>
+                <div class="sim-meta-item"><strong>To:</strong> <span>sarah.jenkins@datacore.io (VP of Revenue Operations)</span></div>
+                <div class="sim-meta-item"><strong>Subject:</strong> <span>Expanding Snowflake pipeline at DataCore without new headcount</span></div>
+              </div>
+
+              <div class="sim-email-content">
+                <p style="margin-bottom: 14px;">Hi Sarah,</p>
+                <p style="margin-bottom: 14px;">
+                  Saw your note on LinkedIn regarding DataCore’s push to <span class="sim-highlight">expand enterprise sales by 35% this quarter</span>, as well as your recent hiring post for 4 enterprise SDRs.
+                </p>
+                <p style="margin-bottom: 14px;">
+                  Typically, scaling outbound pipeline requires 3–6 months of ramp time per rep. We deployed an autonomous SDR fleet for Retool and Ramp that <span class="sim-highlight">automated account research and generated 140+ qualified meetings</span> in month one—at an 80% lower cost per pipeline dollar.
+                </p>
+                <p style="margin-bottom: 14px;">
+                  Would you be open to a 10-minute walkthrough this Thursday at 2:00 PM EST to see how Alice can handle outbound research for your reps?
+                </p>
+                <p style="margin-bottom: 8px;">Best regards,</p>
+                <p><strong>Alice</strong><br><span style="color: #666; font-size: 13px;">Autonomous Outbound Specialist · 11x Revenue Fleet</span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Voice Call -->
+          <div class="sim-tab-content" id="sim-voice">
+            <div class="voice-sim-wrapper">
+              <div class="voice-call-header">
+                <div class="voice-caller-info">
+                  <img src="assets/worker-jordan.jpg" alt="Jordan Voice Agent" class="voice-avatar">
+                  <div>
+                    <strong style="font-size: 16px;">Jordan (Autonomous Voice Agent)</strong>
+                    <div style="font-size: 13px; color: #666;">Connected to: Marcus Vance (CRO, CloudScale Inc.)</div>
+                  </div>
+                </div>
+                <div class="voice-call-status">
+                  <span class="status-dot"></span>
+                  <span>Active Call · Sub-400ms Latency · 02:14</span>
+                </div>
+              </div>
+
+              <!-- Audio waveform visualization -->
+              <div class="waveform-container">
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+              </div>
+
+              <!-- Live transcript -->
+              <div class="live-transcript">
+                <div class="transcript-message">
+                  <span class="transcript-speaker" style="color: var(--color-slate-teal);">[00:12] Jordan:</span>
+                  <span class="transcript-text">"Hi Marcus, this is Jordan reaching out from 11x. I noticed CloudScale recently launched your new multi-region database cluster, and wanted to see how your team is managing outbound qualification for those tier-1 enterprise accounts?"</span>
+                </div>
+                <div class="transcript-message">
+                  <span class="transcript-speaker" style="color: #222;">[00:26] Marcus:</span>
+                  <span class="transcript-text">"Hey Jordan. Honestly our reps are completely slammed with customer success demos right now, so outbound has taken a back seat. Is this an automated system?"</span>
+                </div>
+                <div class="transcript-message">
+                  <span class="transcript-speaker" style="color: var(--color-slate-teal);">[00:38] Jordan:</span>
+                  <span class="transcript-text">"I am a digital worker at 11x! That's exactly why companies like Ramp deploy us—I research your target accounts, initiate phone conversations, answer technical questions, and when an executive expresses interest, I book them straight onto your calendar or execute a warm transfer right now."</span>
+                </div>
+                <div class="transcript-message">
+                  <span class="transcript-speaker" style="color: #222;">[00:54] Marcus:</span>
+                  <span class="transcript-text">"That's genuinely remarkable response time. What does deployment look like with Salesforce?"</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Intent Signal Radar -->
+          <div class="sim-tab-content" id="sim-radar">
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <div style="background: var(--color-bone); border: 1px solid var(--color-iron); border-radius: var(--radius-cards); padding: 18px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                  <strong style="color: var(--color-obsidian);">Signal #8,912: Leadership Transition Detected</strong>
+                  <span style="font-size: 12px; color: var(--color-slate-teal); font-weight: bold;">Verified 4m ago</span>
+                </div>
+                <p style="font-size: 14px; color: #444; line-height: 1.4;">
+                  Target Account: <strong>Acme Financial Technologies</strong>. New VP of Sales Engineering appointed from Stripe. Julian automatically extracted hiring background, mapped 14 direct reports, and queued a warm introduction sequence for Alice.
+                </p>
+              </div>
+
+              <div style="background: var(--color-bone); border: 1px solid var(--color-iron); border-radius: var(--radius-cards); padding: 18px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                  <strong style="color: var(--color-obsidian);">Signal #8,913: Technographic Stack Shift</strong>
+                  <span style="font-size: 12px; color: var(--color-slate-teal); font-weight: bold;">Verified 11m ago</span>
+                </div>
+                <p style="font-size: 14px; color: #444; line-height: 1.4;">
+                  Target Account: <strong>Vanguard Cloud</strong> installed HubSpot Enterprise and Outreach.io. Julian calculated high ICP congruence score (98/100) and flagged account for multi-touch phone qualification via Jordan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Dark Narrative Band #1 (Full-Bleed Deep Teal #0b252a) -->
+  <section class="dark-narrative-band" id="dark-narrative">
+    <div class="container">
+      <div class="dark-band-content">
+        <span class="section-label" style="color: var(--color-slate-teal); letter-spacing: 2px;">Enterprise Architecture</span>
+        <h2 class="dark-band-headline">
+          Zero ramp time. Infinite scale.<br>
+          Complete enterprise governance.
+        </h2>
+        <p class="dark-band-body">
+          Every 11x digital worker operates inside dedicated, isolated enterprise boundaries. Built from the ground up for strict regulatory adherence, zero model hallucination, and seamless bi-directional integration with your existing GTM stack.
+        </p>
+
+        <!-- Feature Tag Pills (Slate Teal #406e7a with white text, 8px radius) -->
+        <div class="feature-tags-marquee">
+          <div class="feature-tag-pill">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>SOC2 Type II Certified</span>
+          </div>
+          <div class="feature-tag-pill">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>ISO 27001 Security Standard</span>
+          </div>
+          <div class="feature-tag-pill">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>GDPR & CCPA Compliant</span>
+          </div>
+          <div class="feature-tag-pill">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Sub-400ms Voice Latency</span>
+          </div>
+          <div class="feature-tag-pill">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Bi-Directional CRM Sync</span>
+          </div>
+          <div class="feature-tag-pill">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Zero Hallucination Guardrails</span>
+          </div>
+          <div class="feature-tag-pill">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Human-in-the-Loop Safeguards</span>
+          </div>
+          <div class="feature-tag-pill">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Dedicated IP & Domain Warmup</span>
+          </div>
+        </div>
+
+        <div style="margin-top: 32px;">
+          <a href="#demo" class="btn-pill btn-pill-primary-dark js-open-demo-modal">Deploy Digital Fleet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Editorial Pastel Feature Cards Grid (Strictly 4 Design.md Pastel Tints) -->
+  <section class="pastel-features-section" id="features">
+    <div class="container">
+      <div class="spotlight-header">
+        <span class="section-label">Core Capabilities</span>
+        <h2 class="section-title">Engineered for Revenue Excellence</h2>
+        <p class="section-description">
+          Four foundational pillars that differentiate 11x digital workers from rudimentary automation tools.
+        </p>
+      </div>
+
+      <div class="pastel-grid">
+        <!-- 1. Dusty Sky (#c5d5e8) -->
+        <div class="pastel-feature-card card-dusty-sky">
+          <div>
+            <div class="pastel-card-top">
+              <span class="pastel-tag">Pillar 01 · Intelligence</span>
+              <span class="pastel-number">01</span>
+            </div>
+            <h3 class="pastel-card-title">Deep Account Reconnaissance</h3>
+            <p class="pastel-card-desc">
+              Julian crawls public filings, executive job openings, technology telemetry, and procurement announcements to detect exact buyer pain before your competitors do.
+            </p>
+          </div>
+          <div class="pastel-card-footer">
+            <span>Explore Research Engine</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+
+        <!-- 2. Mist Mint (#d4e6eb) -->
+        <div class="pastel-feature-card card-mist-mint">
+          <div>
+            <div class="pastel-card-top">
+              <span class="pastel-tag">Pillar 02 · Execution</span>
+              <span class="pastel-number">02</span>
+            </div>
+            <h3 class="pastel-card-title">Dynamic Omni-Channel Cadence</h3>
+            <p class="pastel-card-desc">
+              Synchronize email, phone calls, and LinkedIn touches seamlessly. If a buyer views your email without replying, Jordan follows up by phone within 15 minutes.
+            </p>
+          </div>
+          <div class="pastel-card-footer">
+            <span>View Omni-Channel Flow</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+
+        <!-- 3. Wisteria (#efe5f9) -->
+        <div class="pastel-feature-card card-wisteria">
+          <div>
+            <div class="pastel-card-top">
+              <span class="pastel-tag">Pillar 03 · Cognition</span>
+              <span class="pastel-number">03</span>
+            </div>
+            <h3 class="pastel-card-title">Self-Calibrating Conversational AI</h3>
+            <p class="pastel-card-desc">
+              Digital workers continuously learn from your top closers. Objection handling models self-optimize daily based on verified meeting conversion rates.
+            </p>
+          </div>
+          <div class="pastel-card-footer">
+            <span>Inspect Learning Architecture</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+
+        <!-- 4. Desert Clay (#e7d3bf) -->
+        <div class="pastel-feature-card card-desert-clay">
+          <div>
+            <div class="pastel-card-top">
+              <span class="pastel-tag">Pillar 04 · Integration</span>
+              <span class="pastel-number">04</span>
+            </div>
+            <h3 class="pastel-card-title">Native Enterprise CRM Sync</h3>
+            <p class="pastel-card-desc">
+              Bi-directional synchronization with Salesforce, HubSpot, and Gong. Zero manual logging for human reps; clean data, lifecycle stages, and meeting recordings.
+            </p>
+          </div>
+          <div class="pastel-card-footer">
+            <span>Check Integrations Catalog</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Interactive ROI & Capacity Calculator -->
+  <section class="calculator-section" id="calculator">
+    <div class="container">
+      <div class="spotlight-header">
+        <span class="section-label">Fleet Economics</span>
+        <h2 class="section-title">Calculate Your Pipeline Multiplier</h2>
+        <p class="section-description">
+          Quantify the net financial return and hours saved when deploying 11x autonomous digital workers alongside your account executive team.
+        </p>
+      </div>
+
+      <div class="calculator-card">
+        <!-- Controls -->
+        <div class="calc-controls">
+          <div class="calc-control-group">
+            <div class="calc-label-row">
+              <label for="repsInput" class="calc-label">Current SDR / GTM Headcount</label>
+              <span class="calc-value-display" id="repsValueDisplay">4 reps</span>
+            </div>
+            <input type="range" id="repsInput" class="calc-range-input" min="1" max="25" value="4" step="1">
+          </div>
+
+          <div class="calc-control-group">
+            <div class="calc-label-row">
+              <label for="acvInput" class="calc-label">Average Contract Value (ACV)</label>
+              <span class="calc-value-display" id="acvValueDisplay">$45,000</span>
+            </div>
+            <input type="range" id="acvInput" class="calc-range-input" min="10000" max="150000" value="45000" step="5000">
+          </div>
+
+          <div class="calc-control-group">
+            <div class="calc-label-row">
+              <label for="meetingsInput" class="calc-label">Target Monthly Meetings Per Rep</label>
+              <span class="calc-value-display" id="meetingsValueDisplay">14 / mo</span>
+            </div>
+            <input type="range" id="meetingsInput" class="calc-range-input" min="5" max="30" value="14" step="1">
+          </div>
+        </div>
+
+        <!-- Dynamic Results Panel -->
+        <div class="calc-results">
+          <div>
+            <div class="calc-metric-output">
+              <span class="calc-metric-label">Projected Additional Monthly Pipeline</span>
+              <span class="calc-metric-number" id="calcPipelineOutput">$1,170,000</span>
+            </div>
+
+            <div class="calc-metric-output">
+              <span class="calc-metric-label">Estimated Annual SDR OTE Savings</span>
+              <span class="calc-metric-number" id="calcSavingsOutput" style="color: #55c898;">$340,000 / yr</span>
+            </div>
+
+            <div class="calc-metric-output">
+              <span class="calc-metric-label">Prospecting Hours Returned to Closing Reps</span>
+              <span class="calc-metric-number" id="calcHoursOutput">440 hrs / mo</span>
+            </div>
+          </div>
+
+          <div style="padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.2);">
+            <a href="#demo" class="btn-pill btn-pill-primary-dark js-open-demo-modal" style="width: 100%;">Schedule Economic Briefing</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Customer Stories / Magazine Testimonials (Bone Surface) -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="spotlight-header">
+        <span class="section-label">Enterprise Validation</span>
+        <h2 class="section-title">Trusted by Modern Revenue Leaders</h2>
+        <p class="section-description">
+          Read how forward-thinking sales executives scaled outbound pipeline while cutting customer acquisition costs in half.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <blockquote class="testimonial-quote">
+            “Alice booked 138 qualified enterprise pipeline meetings in her first 60 days. Our closing account executives now spend 100% of their day in active negotiations rather than scraping contact lists.”
+          </blockquote>
+          <div class="testimonial-author-block">
+            <img src="assets/worker-alice.jpg" alt="Client Headshot" class="testimonial-avatar">
+            <div>
+              <div class="testimonial-name">Elena Rostova</div>
+              <div class="testimonial-role">Chief Revenue Officer · FinScale</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <blockquote class="testimonial-quote">
+            “Jordan’s telephone conversation quality blew our board away. Sub-400ms latency means zero robotic awkwardness. He handles objections fluidly and transfers hot buyers directly to our live sales floor.”
+          </blockquote>
+          <div class="testimonial-author-block">
+            <img src="assets/worker-jordan.jpg" alt="Client Headshot" class="testimonial-avatar">
+            <div>
+              <div class="testimonial-name">David Sterling</div>
+              <div class="testimonial-role">VP of Sales · CloudMatrix</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <blockquote class="testimonial-quote">
+            “Before 11x, our SDR ramp took five painful months. We deployed Alice and Julian in three business days. We generated $2.4M in incremental pipeline during our very first quarter.”
+          </blockquote>
+          <div class="testimonial-author-block">
+            <img src="assets/worker-julian.jpg" alt="Client Headshot" class="testimonial-avatar">
+            <div>
+              <div class="testimonial-name">Marcus Vance</div>
+              <div class="testimonial-role">Head of GTM · LatticeCore</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. Dark Narrative Band #2 & Final CTA (Deep Teal #0b252a) -->
+  <section class="dark-narrative-band" style="border-top: 1px solid rgba(255,255,255,0.1);">
+    <div class="container">
+      <div class="dark-band-content">
+        <span class="section-label" style="color: var(--color-slate-teal);">Immediate Deployment</span>
+        <h2 class="dark-band-headline">
+          Your next high-performing rep starts today.<br>
+          Without the six-month ramp.
+        </h2>
+        <p class="dark-band-body">
+          Join hundreds of high-growth tech companies and enterprise sales teams transforming outbound pipeline with 11x digital workers.
+        </p>
+
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="#demo" class="btn-pill btn-pill-primary-dark btn-pill-lg js-open-demo-modal">Hire Alice & Jordan</a>
+          <a href="#simulation" class="btn-pill btn-pill-outline-dark btn-pill-lg">View Platform Specs</a>
+        </div>
+
+        <p style="font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 24px;">
+          Deployment in 72 hours · SOC2 Type II Certified · Dedicated revenue engineer assigned
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. Floating Chat Widget (Ask Julian — Pill shape, #0b252a background, avatar) -->
+  <div class="ask-julian-widget" id="julianWidget">
+    <button class="julian-trigger-pill" id="julianTrigger" aria-label="Open Ask Julian conversation">
+      <img src="assets/worker-julian.jpg" alt="Julian Avatar" class="julian-avatar-thumb">
+      <span class="julian-label">Ask Julian</span>
+    </button>
+
+    <!-- Expanded Chat Panel -->
+    <div class="julian-chat-panel" id="julianPanel">
+      <div class="julian-panel-header">
+        <div class="julian-panel-title-wrap">
+          <img src="assets/worker-julian.jpg" alt="Julian" class="julian-avatar-thumb" style="width: 28px; height: 28px;">
+          <div>
+            <div class="julian-panel-title">Julian · 11x Researcher</div>
+            <div class="julian-panel-subtitle">● Online & ready to assist</div>
+          </div>
+        </div>
+        <button class="julian-close-btn" id="julianCloseBtn" aria-label="Close chat">✕</button>
+      </div>
+
+      <div class="julian-messages-feed" id="julianFeed">
+        <div class="chat-bubble bubble-julian">
+          Welcome to 11x! I’m Julian, the market intelligence worker. Ask me anything about how Alice books meetings, Jordan’s phone latency, or our enterprise security architecture.
+        </div>
+      </div>
+
+      <div class="julian-suggestions">
+        <span class="suggestion-chip" data-prompt="How does Alice compare to human SDRs?">Compare Alice to human SDRs</span>
+        <span class="suggestion-chip" data-prompt="What voice latency does Jordan achieve?">Jordan's voice latency</span>
+        <span class="suggestion-chip" data-prompt="Is 11x SOC2 compliant?">SOC2 & compliance</span>
+        <span class="suggestion-chip" data-prompt="Can 11x sync with Salesforce and HubSpot?">CRM integrations</span>
+      </div>
+
+      <div class="julian-input-row">
+        <input type="text" class="julian-text-input" id="julianInput" placeholder="Ask about digital workers, pricing..." aria-label="Message Julian">
+        <button class="julian-send-btn" id="julianSendBtn">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 14. Interactive Booking / Get Started Modal Drawer -->
+  <div class="booking-modal-overlay" id="bookingModal">
+    <div class="booking-modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">✕</button>
+      <span class="section-label">Private Consultation</span>
+      <h3 class="modal-headline">Deploy Your Autonomous Fleet</h3>
+      <p class="modal-subheadline">
+        Tell us about your go-to-market objectives. Our revenue engineering team will configure a personalized live demonstration with Alice and Jordan.
+      </p>
+
+      <form class="modal-form" id="bookingForm">
+        <div class="form-group">
+          <label class="form-label">Select Digital Worker(s)</label>
+          <div class="worker-picker">
+            <div class="picker-item selected" data-value="alice">Alice (SDR)</div>
+            <div class="picker-item" data-value="jordan">Jordan (Voice)</div>
+            <div class="picker-item" data-value="fleet">Entire Fleet</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="workEmail" class="form-label">Work Email</label>
+          <input type="email" id="workEmail" class="form-input" placeholder="sarah@yourcompany.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="companyDomain" class="form-label">Company Website / Domain</label>
+          <input type="text" id="companyDomain" class="form-input" placeholder="yourcompany.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="crmSelect" class="form-label">Primary CRM System</label>
+          <select id="crmSelect" class="form-select">
+            <option value="salesforce">Salesforce Enterprise</option>
+            <option value="hubspot">HubSpot Sales Hub</option>
+            <option value="pipedrive">Pipedrive / Other</option>
+            <option value="custom">Custom Internal CRM</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-pill btn-pill-primary-light" style="width: 100%; margin-top: 10px;">
+          Request Priority Onboarding
+        </button>
+      </form>
+
+      <div id="modalSuccessMsg" style="display: none; text-align: center; padding: 24px 0;">
+        <div style="font-size: 32px; margin-bottom: 12px;">✓</div>
+        <h4 style="font-size: 22px; font-weight: bold; margin-bottom: 8px;">Fleet Configuration Queued</h4>
+        <p style="font-size: 15px; color: #444; line-height: 1.4;">
+          Julian is currently researching your domain. An 11x revenue engineer will share your tailored demo sandbox and outbound preview within 2 hours.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 15. Lightbox Modal for Hero Screenshot -->
+  <div class="screenshot-modal" id="screenshotModal">
+    <div class="screenshot-modal-inner">
+      <button class="screenshot-modal-close" id="screenshotClose" aria-label="Close modal">✕</button>
+      <img src="assets/hero-screenshot.jpg" alt="11x Full-Resolution Platform View" class="screenshot-modal-img">
+    </div>
+  </div>
+
+  <!-- 16. Site Footer (Stone #d7cecc Surface, Hairline Border) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="#" class="brand-logo" style="margin-bottom: 4px;">
+            <img src="assets/favicon.png" alt="11x logo" class="brand-icon">
+            <span>11x</span>
+          </a>
+          <p class="footer-tagline">
+            The autonomous digital workforce for modern enterprise go-to-market teams. Backed by a16z and Benchmark.
+          </p>
+          <div style="font-size: 13px; color: #666;">San Francisco · London · New York</div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Digital Workers</div>
+          <ul class="footer-link-list">
+            <li><a href="#workers" class="footer-link">Alice (Autonomous SDR)</a></li>
+            <li><a href="#workers" class="footer-link">Jordan (Phone Agent)</a></li>
+            <li><a href="#workers" class="footer-link">Julian (Intelligence)</a></li>
+            <li><a href="#workers" class="footer-link">Arthur (Inbound & RevOps)</a></li>
+            <li><a href="#demo" class="footer-link js-open-demo-modal">Fleet Deployment</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Platform</div>
+          <ul class="footer-link-list">
+            <li><a href="#simulation" class="footer-link">Autonomous Workflows</a></li>
+            <li><a href="#features" class="footer-link">Omni-Channel Execution</a></li>
+            <li><a href="#features" class="footer-link">CRM Bi-Directional Sync</a></li>
+            <li><a href="#dark-narrative" class="footer-link">Security & SOC2</a></li>
+            <li><a href="#calculator" class="footer-link">Capacity Calculator</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Resources</div>
+          <ul class="footer-link-list">
+            <li><a href="#manifesto" class="footer-link">The 11x Manifesto</a></li>
+            <li><a href="#testimonials" class="footer-link">Customer Studies</a></li>
+            <li><a href="#platform-spotlight" class="footer-link">Platform Tour</a></li>
+            <li><a href="#demo" class="footer-link js-open-demo-modal">Schedule Demo</a></li>
+            <li><a href="#" class="footer-link">API Documentation</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-link-list">
+            <li><a href="#" class="footer-link">About 11x</a></li>
+            <li><a href="#" class="footer-link">Series B Announcement</a></li>
+            <li><a href="#" class="footer-link">Careers (We're Hiring)</a></li>
+            <li><a href="#" class="footer-link">Press Kit</a></li>
+            <li><a href="#" class="footer-link">Security Whitepaper</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 11x AI, Inc. All rights reserved. Built with Didone typography & cinematic editorial design.
+        </div>
+        <div class="footer-status-indicator">
+          <span class="footer-status-dot"></span>
+          <span>All 11x Autonomous Services Operational</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
